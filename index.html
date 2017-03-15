@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 APIs - Master</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/overrides.css">
     <script src="js/vendor/modernizr.js"></script>
     <!-- include the places service in the map api script -->
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAsbjHGrC87yr_ideL9nuhdITjAXu540hI&sensor=false"></script>
+    
   </head>
   <body>
     <!-- map modal -->
@@ -29,7 +29,7 @@
     </header>
   
     <!-- large images / models -->
-    <div class="row">
+    <div class="row hide">
       <div class="small-12 columns">
         <div class="mainContainer">
           <!-- added this div called cars for the roundabout -->
@@ -43,7 +43,7 @@
     </div>
 
     <!-- thumbnail images -->
-    <div class="row">
+    <div class="row car-thumbs">
       <div class="small-6 columns">
         <h4 class="subhead">SELECT YOUR MODEL :<span>&nbsp;</span></h4>
         <div class="thumbInfo">
@@ -66,18 +66,10 @@
       </div>
       
       <!-- model info block  -->
-      <div class="small-6 columns modelInfo">
-         <ul class="no-bullet">
-          <li><h4 class="modelDesc">Model Description Here</h4><p class="priceInfo">Pricing here</p></li> 
-          <li><h5 class="subM">SubModel 1</h5></li>
-          <li><p>some info here...</p></li>
-          <li><p>more info here... add more li elements if you need to</p></li>
-          <li></li>
-          <li><h5 class="subM">SubModel 2</h5></li>
-          <li><p>some info here...</p></li>
-          <li><h5 class="subM">SubModel 3 ( if your model has one )</h5></li>
-          <li><p>some info here...</p></li>
-        </ul>
+      <div class="small-6 columns modelInfo">         
+          <h4 class="modelName">Model Name Here</h4>
+          <p class="priceInfo">Pricing here</p>
+          <p class="modelDetails">Model details here</p>          
       </div>
     </div> <!-- end model info / thumbs -->
     <hr>
@@ -88,6 +80,7 @@
         <div id="map-canvas"></div>
         <i class="fa fa-expand left">&nbsp;Click to expand map</i>
       </div>
+      
       <div class="small-6 columns">
         <div>
           <h4>Find a dealer close to you!</h4>
@@ -125,7 +118,6 @@
     <script src="js/jquery.roundabout.min.js"></script>
     <script src="js/jquery-scrollto.js"></script>
     <!-- adding the Google Maps api -->
-    <script src="js/mappingScript.js"></script>
     <script src="js/master.js"></script>
   </body>
 </html>
